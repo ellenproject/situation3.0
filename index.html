@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情境式入口網站</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video class="video" id="a1" loop muted="true">
+                    <source src="./video/video_01.mp4" type="video/mp4">
+                </video>
+                <div class="menu-wrapper">
+                    <a href="https://www.o-plus.com.tw/web-all-set/about-us/" target="_blank">關於我們</a>
+                    <a href="mailto: rita@olily.com" target="_blank">聯絡我們</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video class="video" id="a2" loop muted="true">
+                    <source src="./video/video_02.mp4" type="video/mp4">
+                </video>
+                <div class="menu-wrapper">
+                    <a href="https://www.olily.com/" target="_blank">歐立利國際設計集團</a>
+                    <a href="https://www.o-ya-design.com/" target="_blank">歐也整合行銷</a>
+                    <a href="https://www.odcdesign.com/" target="_blank">歐原形象設計</a>
+                    <a href="https://www.olivon.com.cn/" target="_blank">歐立旺展覽設計諮詢(上海)</a>
+                    <a href="https://www.auroraexpo.com/" target="_blank">經展國際會展開發</a>
+                    <a href="http://www.o-j-k-system.com/" target="_blank">歐金鋼材料租賃</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/egain/" target="_blank">一見古美術生活</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video class="video" id="a3" loop muted="true">
+                    <source src="./video/video_03.mp4" type="video/mp4">
+                </video>
+                <div class="menu-wrapper">
+                    <a href="https://www.o-plus.com.tw/6_0/" target="_blank">數位型錄</a>
+                    <a href="https://www.o-plus.com.tw/MidiaLabService/" target="_blank">品牌形象影音</a>
+                    <a href="https://www.o-plus.com.tw/c_space/" target="_blank">商業空間規劃</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/o-web/index_v2.html" target="_blank">模板/一頁式網站</a>
+                    <a href="./index.html" target="_blank">情境式網站</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/ARVR/" target="_blank">AR/VR</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/OMO/" target="_blank">虛實整合行銷</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video class="video" id="a4" loop muted="true">
+                    <source src="./video/video_04.mp4" type="video/mp4">
+                </video>
+                <div class="menu-wrapper">
+                    <a href="https://www.olily.com/cblog/" target="_blank">部落格大事紀</a>
+                    <a href="https://www.o-plus.com.tw/c_space/" target="_blank">數位EDM</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video class="video" id="a5" loop muted="true">
+                    <source src="./video/video_05.mp4" type="video/mp4">
+                </video>
+                <div class="menu-wrapper">
+                    <a href="https://www.o-plus.com.tw/web-all-set/3min/" target="_blank">3分鐘看懂全球展覽</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/podcast/" target="_blank">PODCAST</a>
+                    <a href="https://www.o-plus.com.tw/web-all-set/o-speak/" target="_blank">歐講堂</a>
+                    <a href="https://www.accupass.com/event/2107160829121793862300" target="_blank">講師課程</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <section class="mute-video">
+        <div class="play">
+            <img class="svg" src="./img/svg/play.svg" alt="">
+        </div>
+        <div class="pause active">
+            <img class="svg" src="./img/svg/pause.svg" alt="">
+        </div>
+    </section>
+
+    <section class="contact">
+        <ul>
+            <li><a href="https://line.me/R/ti/p/%40992amuou" target="_blank"><img src="./img/icon/line-brands.svg" alt=""></a></li>
+            <li><a href="tel:02-2655-1989" target="_blank"><img src="./img/icon/phone-brands.svg" alt=""></a></li>
+            <li><a href="https://www.facebook.com/Olily.Design" target="_blank"><img src="./img/icon/facebook-square-brands.svg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/user/odesigner" target="_blank"><img src="./img/icon/youtube-brands.svg" alt=""></a></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // var swiper = new Swiper(".swiper-container", {
+            //     cssMode: true,
+            //     navigation: {
+            //         nextEl: ".swiper-button-next",
+            //         prevEl: ".swiper-button-prev",
+                    
+            //     },
+            //     pagination: {
+            //         el: ".swiper-pagination",
+            //         clickable: true,
+            //     },
+            //     mousewheel: true,
+            //     keyboard: true,
+            //     loop: true,
+                
+            // });
+
+
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                // autoplay: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // spaceBetween: 0,
+                speed: 1000,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                watchOverflow: true,
+                grabCursor: true,
+                /* ON INIT AUTOPLAY THE FIRST VIDEO */
+                on: {
+                    init: function () {
+                    console.log('swiper initialized');
+                    var currentVideo =  $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+                    currentVideo.trigger('play');
+                    },
+                },
+            });
+
+            /* GET ALL VIDEOS */
+            var sliderVideos = $(".swiper-slide video");
+
+            /* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+            swiper.on('slideChange', function () {
+                console.log('slide changed');
+                /* stop all videos  */
+                sliderVideos.each(function( index ) {
+                    // this.currentTime = 0;
+                    this.pause();  //key
+            });
+
+            /* SWIPER GET CURRENT AND PREV SLIDE (AND The VIDEO INSIDE) */
+            var prevVideo =  $(`[data-swiper-slide-index="${this.previousIndex}]"`).find("video");
+            var currentVideo =  $(`[data-swiper-slide-index="${this.realIndex}"]`).find("video");
+            prevVideo.trigger('stop');
+            currentVideo.trigger('play');
+            });
+
+            
+
+
+            
+            $(".mute-video").click(function(){
+                if($("video").prop("muted")){
+                    $("video").prop("muted", false);
+                    $(".play").addClass("active");
+                    $(".pause").removeClass("active");
+                }else{
+                    $("video").prop("muted",true);
+                    $(".pause").addClass("active");
+                    $(".play").removeClass("active")
+                }
+            });
+        })
+
+        
+    </script>
+</body>
+</html>

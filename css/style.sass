@@ -1,0 +1,89 @@
+*
+    margin: 0
+    padding: 0
+    max-width: 100%
+
+@mixin mobile()
+    @media ( max-width: 480px )
+        @content
+
+body
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    background-color: #242424
+    .swiper-container
+        position: relative
+        overflow: visible
+        .swiper-wrapper
+            .swiper-slide
+                opacity: 0  //key
+                .menu-wrapper
+                    position: absolute
+                    top: 20px
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 100%
+                    text-align: center
+                    z-index: 1
+                    @include mobile
+                        position: relative
+                        top: 0
+                        overflow-y: auto
+                    a
+                        text-decoration: none
+                        color: #fff
+                        font-size: 18px
+                        font-weight: bold
+                        margin: 0 20px
+                        @include mobile
+                            display: block
+                            padding: 10px 0
+                .video
+                    width: 100%
+                    height: auto
+            .swiper-slide-visible, .swiper-slide-active
+                opacity: 1
+                transition-duration: 1s
+                background-position: -2800px 0
+        .swiper-pagination
+            bottom: 170px
+            @include mobile
+                bottom: 320px
+            .swiper-pagination-bullet-active
+                background: #FFF
+        .swiper-button-prev, .swiper-button-next
+            color: #fff
+    .mute-video
+        position: absolute
+        bottom: 30px
+        left: 30px
+        z-index: 1
+        width: 20px
+        height: 20px
+        .play, .pause, .bgm
+            display: none
+            cursor: pointer
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6))
+        .active
+            display: block
+            cursor: pointer
+    .contact
+        position: absolute
+        bottom: 30px
+        right: 30px
+        z-index: 1
+        ul
+            display: flex
+            list-style: none
+            justify-content: center
+            align-items: center
+            li
+                margin: 0 10px
+                width: 100%
+                a
+                    width: 100%
+                    img
+                        width: 25px
+                        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6))

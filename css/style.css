@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #242424;
+}
+
+body .swiper-container {
+  position: relative;
+  overflow: visible;
+}
+
+body .swiper-container .swiper-wrapper .swiper-slide {
+  opacity: 0;
+}
+
+body .swiper-container .swiper-wrapper .swiper-slide .menu-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  body .swiper-container .swiper-wrapper .swiper-slide .menu-wrapper {
+    position: relative;
+    top: 0;
+    overflow-y: auto;
+  }
+}
+
+body .swiper-container .swiper-wrapper .swiper-slide .menu-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+@media (max-width: 480px) {
+  body .swiper-container .swiper-wrapper .swiper-slide .menu-wrapper a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+body .swiper-container .swiper-wrapper .swiper-slide .video {
+  width: 100%;
+  height: auto;
+}
+
+body .swiper-container .swiper-wrapper .swiper-slide-visible, body .swiper-container .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-position: -2800px 0;
+}
+
+body .swiper-container .swiper-pagination {
+  bottom: 170px;
+}
+
+@media (max-width: 480px) {
+  body .swiper-container .swiper-pagination {
+    bottom: 320px;
+  }
+}
+
+body .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #FFF;
+}
+
+body .swiper-container .swiper-button-prev, body .swiper-container .swiper-button-next {
+  color: #fff;
+}
+
+body .mute-video {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+body .mute-video .play, body .mute-video .pause, body .mute-video .bgm {
+  display: none;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+}
+
+body .mute-video .active {
+  display: block;
+  cursor: pointer;
+}
+
+body .contact {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+}
+
+body .contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contact ul li {
+  margin: 0 10px;
+  width: 100%;
+}
+
+body .contact ul li a {
+  width: 100%;
+}
+
+body .contact ul li a img {
+  width: 25px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+}
+/*# sourceMappingURL=style.css.map */
